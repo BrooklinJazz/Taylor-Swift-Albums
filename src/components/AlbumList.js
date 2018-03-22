@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import ReactNative from 'react-native';
-import { View, Text } from 'react-native'
+import { View, Text } from 'react-native';
+import axios from 'axios';
 
 class AlbumList extends Component {
     componentWillMount() {
-        console.log('Component Will Mount in Album List')
+        axios.get('https://rallycoding.herokuapp.com/api/music/albums')
+        .then(response => console.log(response))
     }
     render() {
         return (
