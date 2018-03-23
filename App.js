@@ -6,7 +6,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header headerText={'Albums!'}/>
+        <Header headerText={'Albums'}/>
       </View>
     );
   }
