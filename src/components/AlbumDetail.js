@@ -8,10 +8,21 @@ const AlbumDetail = (props) => {
     return (
         <Card>
             <CardSection>
-                <Text>{props.album.title}</Text>
+                <View></View>
+                <View>
+                    <Text>{props.album.title}</Text>
+                    <Text>{props.album.artist}</Text>
+                </View>
             </CardSection>
         </Card>
     )
+}
+
+const styles = {
+    headerContent: {
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+    }
 }
 
 export default AlbumDetail;
